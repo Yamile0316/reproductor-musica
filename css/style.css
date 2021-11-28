@@ -1,0 +1,123 @@
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ecb0b0; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .main-playing,
+  .list-song-container {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 5%;
+    background-color: #1d3647;
+    box-shadow: 15px 15px 16px rgba(68, 84, 109, 0.6);
+  }
+  
+  .main-playing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .cover-container {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .data-song-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(63, 143, 212);
+  }
+  .cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    animation-duration: 4s;
+  }
+  
+  .list-item {
+    background-color: #114852;
+    display: flex;
+    margin-bottom: 1em;
+    color: rgb(167, 168, 67);
+    border-radius: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .list-item img {
+    width: 6rem;
+    height: 6rem;
+  }
+  .progress-bar {
+    width: 70%;
+  }
+  .progress-bar input {
+    width: 100%;
+    cursor: pointer;
+  }
+  .buscar
+  {
+      width: 100%;
+      position: relative;
+      margin-top: -100%;
+  }
+  input[type="range"]
+  {
+      -webkit-appearance: none;
+      width: 50%;
+      outline: none;
+      height: 2px;
+      margin: 0 25%;
+  }
+  input[type="range"]::-webkit-slider-thumb
+  {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 20px;
+      background: #ff8a65;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  .left input
+  {
+    margin-bottom: 5%;
+  }
+  .left p
+  {
+    margin-left: 85%;
+    margin-bottom: 4%;
+    margin-top: -14%;
+  }
+  .left img
+  {
+      width: 1em;
+      height: 1em;
+      margin-bottom: -18% ;
+  }
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

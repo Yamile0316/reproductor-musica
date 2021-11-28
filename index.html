@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Spoofy | Home</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-playing">
+        <div>
+            <input class="buscar" id="buscar" type="text" />
+          </div>
+        <div class="cover-container">
+          <img id="cover-image" src="img/caratulas/amapolas.jpg" />
+        </div>
+        <div class="progress-bar">
+          <input id="progress-bar" value="0" type="range" min="0" />
+        </div>
+        <div class="data-song-container">
+          <h1 id="title-song">...</h1>
+          <p id="artist-song">...</p>
+        </div>
+
+        <div class="controls-container">
+          <button id="prev-btn">⇚</button>
+          <button id="play-btn">||</button>
+          <button id="next-btn">⇛</button>
+        </div>
+        <div class="left">
+          <img src="img/volumen.png">
+          <div id= "volumen" class="volumen">
+          <i class="fa fa-volume-up" aria-hidden="true" id="volume_icon" onclick="mute_sound()"></i>
+          <input type="range" min="0" max="100" value="90" onchange="volumen_change()" id="volume">
+          <p id="volumen_show">90</p>
+      </div>
+  </div>
+      </div>
+      <div class="list-song-container" id="list-song-container"></div>
+    </div>
+    <audio id="audio-playing" src="audio/canciones/_Letra_48k.mp3"></audio>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
